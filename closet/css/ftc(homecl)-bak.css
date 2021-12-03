@@ -1,0 +1,430 @@
+@charset "UTF-8";
+/* 기본셋팅 */
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+/* 오타수정 */
+input[type="Search"] {
+  background-color: transparent;
+  width: 47%;
+  padding: 3px 0 3px 5px;
+  font-size: 14px;
+  color: #191919;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+#wrap {
+  max-height: 3000px;
+  margin: 0 auto;
+  padding-left: 40px;
+  box-sizing: border-box;
+}
+#wrap {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  border: 0;
+}
+/* HEADER 시작 */
+#hd {
+  padding-left: 275px;
+  position: static;
+  box-sizing: content-box;
+  height: 250px;
+}
+#hd .logo {
+  position: absolute;
+  width: 100%;
+
+  top: 25px;
+  left: 47%;
+}
+
+#hd .menu {
+  position: fixed;
+  justify-content: flex-end;
+  margin-top: 60px;
+  right: -14px;
+  text-align: center;
+  z-index: 1;
+
+  font-family: "Noto Sans KR";
+  font-size: 14px;
+  font-weight: 400;
+}
+.hd .menu a {
+  color: #191919;
+  display: inline-block;
+  margin: 0;
+  margin-right: 35px;
+}
+.hd .menu a:after {
+  content: "";
+  display: block;
+  border-bottom: solid 1px #191919;
+  transform: scaleX(0);
+  transition: transform 0.5s ease-in-out;
+}
+.hd .menu a:hover:after {
+  transform: scaleX(1);
+}
+.hd .menu a:after {
+  transform-origin: 0% 50%;
+}
+/* side 메뉴 시작 */
+.side {
+  position: fixed;
+  top: -35px;
+  box-sizing: border-box;
+  padding-right: 20px;
+  z-index: 9;
+  background: #fff;
+
+  font-family: "Noto Sans KR";
+  font-size: 14px;
+  font-weight: 500;
+}
+.side::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 60px;
+  /* background: #fff; */
+  position: absolute;
+  top: -60px;
+  left: 0;
+}
+.side ul > li {
+  padding: 0 0 10px 0;
+}
+.side .gnb {
+  padding: 100px 0 70px 0;
+  font-family: "Noto Sans KR";
+  font-size: 14px;
+  font-weight: 500;
+}
+.side .gnb-menu {
+  display: inline-block;
+}
+.side .gnb-menu .tmp-dep1 {
+  margin-bottom: 10px;
+}
+.side .side-menu {
+  position: relative;
+}
+.side .side-menu .sub-menu li > a {
+  display: inline-block;
+}
+/* .side .side-menu .sub-menu li {
+  margin-bottom: 0px !important;
+} */
+.side .side-menu .sub-menu {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  left: 0;
+}
+.side-menu .tmp-dep1:hover .sub-menu {
+  opacity: 1;
+  visibility: visible;
+  width: 100%;
+  transition: all 0.3s;
+
+  font-family: "Noto Sans KR";
+  font-size: 12px;
+  font-weight: 400;
+  padding-top: 5px;
+  padding-left: 2px;
+}
+.side .side-menu .search-area {
+  padding-top: 35px;
+}
+.side .sns-logo {
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+}
+.side .sns-logo .sns ul {
+  display: flex;
+}
+.side .sns-logo .sns li {
+  margin-right: 20px;
+}
+.side .sns-logo .sns img {
+  width: 18px;
+}
+.side .side-menu .info-list {
+  display: inline-block;
+  padding-top: 250px;
+}
+.side .side-menu .info-list {
+  font-family: "Noto Sans KR";
+  font-size: 11px;
+  font-weight: 500;
+}
+#info-txt {
+  font-family: "Noto Sans KR";
+  font-size: 10px;
+  font-weight: 400;
+}
+/* side-menu hover 사이드메뉴 형광펜효과 */
+.side .gnb-menu li:hover #top::after {
+  width: 100%;
+}
+.gnb-menu #top {
+  position: relative;
+}
+.highlight-color1 { background: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%); }
+.highlight-color2 { background: linear-gradient(to right, #fe88ff 0%, #c2a4ff 100%); }
+.highlight-color3 { background: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 100%); }
+.highlight-color4 { background: linear-gradient(to right, #f6d365 0%, #fda085 100%); }
+.highlight-color5 { background: linear-gradient(-225deg, #69eacb 0%, #eaccf8 48%, #6654f1 100%); }
+.highlight-color6 { background: linear-gradient(to right, #a6c0fe 10%, #f68084 100%); }
+.highlight-color7 { background: linear-gradient(to right, #a8edea 0%, #fed6e3 100%); }
+.highlight-color8 { background: linear-gradient(to right, #d299c2 0%, #fef9d7 100%); }
+.highlight-color9 { background: linear-gradient(to right,  #fed6e3 0%, #a8edea 100%); }
+
+#top::after {
+  content: "";
+  width: 0;
+  height: 8px;
+  /* background: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%); */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 10;
+  z-index: -1;
+  transition: 0.3s all;
+}
+.side .gnb-menu li:hover #pants::after {
+  width: 100%;
+}
+#pants {
+  position: relative;
+}
+#pants::after {
+  content: "";
+  width: 0;
+  height: 9px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 10;
+  z-index: -1;
+  transition: 0.3s all;
+}
+.side .gnb-menu li:hover #outer::after {
+  width: 100%;
+}
+#outer {
+  position: relative;
+}
+#outer::after {
+  content: "";
+  width: 0;
+  height: 9px;
+  /* background: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 100%); */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 10;
+  z-index: -1;
+  transition: 0.3s all;
+}
+.side .gnb-menu li:hover #jewelry::after {
+  width: 100%;
+}
+#jewelry {
+  position: relative;
+}
+#jewelry::after {
+  content: "";
+  width: 0;
+  height: 9px;
+  /* background: linear-gradient(to right, #f6d365 0%, #fda085 100%); */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 10;
+  z-index: -1;
+  transition: 0.3s all;
+}
+.side .gnb-menu li:hover #dresses::after {
+  width: 100%;
+}
+#dresses {
+  position: relative;
+}
+#dresses::after {
+  content: "";
+  width: 0;
+  height: 9px;
+  /* background-image: linear-gradient(-225deg, #69eacb 0%, #eaccf8 48%, #6654f1 100%); */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 10;
+  z-index: -1;
+  transition: 0.3s all;
+}
+.side .gnb-menu li:hover #product::after {
+  width: 100%;
+}
+#product {
+  position: relative;
+}
+#product::after {
+  content: "";
+  width: 0;
+  height: 9px;
+  /* background: linear-gradient(to right, #a6c0fe 10%, #f68084 100%); */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 10;
+  z-index: -1;
+  transition: 0.3s all;
+}
+.side .gnb-menu li:hover #home-closet::after {
+  width: 100%;
+}
+#home-closet {
+  position: relative;
+}
+#home-closet::after {
+  content: "";
+  width: 0;
+  height: 9px;
+  /* background: linear-gradient(to right, #a8edea 0%, #fed6e3 100%); */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 10;
+  z-index: -1;
+  transition: 0.3s all;
+}
+.side .gnb a:hover #closet::after {
+  width: 100%;
+}
+#closet {
+  display: inline-block;
+  position: relative;
+}
+#closet::after {
+  content: "";
+  width: 0;
+  height: 9px;
+  /* background: linear-gradient(to right, #d299c2 0%, #fef9d7 100%); */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 10;
+  z-index: -1;
+  transition: 0.3s all;
+}
+.side .gnb-menu li:hover #artist::after {
+  width: 100%;
+}
+#artist {
+  display: inline-block;
+  position: relative;
+}
+#artist::after {
+  content: "";
+  width: 0;
+  height: 9px;
+  /* background: linear-gradient(to right,  #fed6e3 0%, #a8edea 100%); */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 10;
+  z-index: -1;
+  transition: 0.3s all;
+}
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 3px;
+  max-height: 100%;
+  height: 100%;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-thumb {
+  background: #000;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-button {
+  display: none;
+}
+/* new-item start */
+.container {
+  padding-left: 275px;
+}
+.container .main-tit {
+  font-family: "Noto Sans KR";
+  font-size: 18px;
+  font-weight: 500;
+  padding-bottom: 50px;
+}
+.container .main-img {
+  float: left;
+  width: 35%;
+}
+.new-item .items .slide-img {
+  width: 65%;
+  position: relative;
+  display: flex;
+}
+.container .sub-tit {
+  font-family: "Noto Sans KR";
+  font-size: 18px;
+  font-weight: 400;
+
+  position: absolute;
+  left: 877px;
+}
+.new-item .items .slide-img ul {
+  display: flex;
+  margin-top: 143px;
+  margin-bottom: 143px;
+  overflow: hidden;
+}
+/* page */
+.next-page {
+  padding-left: 275px;
+  /* position: absolute; */
+  text-align: center;
+  bottom: -1900px;
+  color: #191919;
+}
+/* footer */
+.ft {
+  padding: 100px 0 0 305px;
+  box-sizing: content-box;
+  height: 50px;
+}
+.ft .box-wrap {
+  text-align: center;
+}
+
+.ft .ft-menu li {
+  font-family: "Noto Sans KR";
+  display: inline-block;
+  font-size: 12px;
+  margin-right: 10px;
+  color: #000;
+}
+.ft .ft-menu li {
+  position: relative;
+  /* bottom: 120px; */
+}
+.ft .ft-menu li:nth-child(2) {
+  color: red;
+  font-weight: bold;
+}
+@media screen and (max-width: 768px) {
+}

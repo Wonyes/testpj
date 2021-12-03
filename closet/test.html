@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      li {
+        list-style: none;
+      }
+      img {
+        width: 100%;
+        display: block;
+      }
+
+      .aj-item-marquee-wrap {
+        width: 60%;
+        overflow: hidden;
+      }
+      .aj-item-marquee-wrap .marquee {
+        word-wrap: normal;
+        overflow-wrap: normal;
+        white-space: nowrap;
+        width: 200%;
+        /* 부모 너비 2배(내 float로 된 자식1, 자식2가 한줄에 다 배치될 수 있도록) */
+        margin-bottom: 5px;
+      }
+      .aj-item-marquee-wrap .marquee .simplemarquee-wrapper {
+        display: inline-block;
+        animation-duration: 20s;
+        animation-timing-function: linear;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+        animation-fill-mode: none;
+        animation-name: simplemarquee;
+        margin-left: 0;
+
+        float: left;
+        width: 50%;
+        /* width: 100%를 하면 부모가 1000이면 나도 1000이되므로, 나는 나의 복제본과 반반 나눠야하기 때문에 50%  */
+      }
+      .aj-item-marquee-wrap .marquee:hover .simplemarquee-wrapper {
+        animation-play-state: paused;
+      }
+      .aj-item-marquee-wrap .marquee li {
+        float: left;
+        width: calc(33.3333% - 5px);
+        margin-left: 5px;
+      }
+
+      .clearfix::before,
+      .clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+      @-webkit-keyframes simplemarquee {
+        0% {
+          -webkit-transform: translate(0, 0);
+        }
+        100% {
+          -webkit-transform: translate(-100%, 0);
+        }
+      }
+      @-moz-keyframes simplemarquee {
+        0% {
+          -moz-transform: translate(0, 0);
+        }
+        100% {
+          -moz-transform: translate(-100%, 0);
+        }
+      }
+      @-o-keyframes simplemarquee {
+        0% {
+          -o-transform: translate(0, 0);
+        }
+        100% {
+          -o-transform: translate(-100%, 0);
+        }
+      }
+      @keyframes simplemarquee {
+        0% {
+          transform: translate(0, 0);
+        }
+        100% {
+          transform: translate(-100%, 0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="aj-item-marquee-wrap">
+      <div class="marquee clearfix">
+        <div class="simplemarquee-wrapper">
+          <ul>
+            <!-- li안쪽에는 원하는 내용들을 넣으면된다~~ li까지가 레이아웃~~ -->
+            <li>
+              <a href="//www.bodyluv.kr/" target="_blank" title="바디럽">
+                <img src="./images/top-item1.jpg" alt="" />
+              </a>
+            </li>
+            <li>
+              <a href="//www.hotping.co.kr/" target="_blank" title="핫핑">
+                <img src="./images/top-item2.jpg" alt="" />
+              </a>
+            </li>
+            <li>
+              <a href="//www.66girls.co.kr/" target="_blank" title="육육걸즈">
+                <img src="./images/top-item3.jpg" alt="" />
+              </a>
+            </li>
+            <!-- <li><a href="//www.andar.co.kr/" target="_blank" title="안다르"><img src="//via.placeholder.com/350x150" alt=""></a></li> -->
+          </ul>
+        </div>
+        <div class="simplemarquee-wrapper">
+          <ul>
+            <!-- li안쪽에는 원하는 내용들을 넣으면된다~~ li까지가 레이아웃~~ -->
+            <li>
+              <a href="//www.bodyluv.kr/" target="_blank" title="바디럽">
+                <img src="./images/top-item1.jpg" alt="" />
+              </a>
+            </li>
+            <li>
+              <a href="//www.hotping.co.kr/" target="_blank" title="핫핑">
+                <img src="./images/top-item2.jpg" alt="" />
+              </a>
+            </li>
+            <li>
+              <a href="//www.66girls.co.kr/" target="_blank" title="육육걸즈">
+                <img src="./images/top-item3.jpg" alt="" />
+              </a>
+            </li>
+            <!-- <li><a href="//www.andar.co.kr/" target="_blank" title="안다르"><img src="//via.placeholder.com/350x150" alt=""></a></li> -->
+          </ul>
+        </div>
+      </div>
+      <div class="marquee clearfix">
+        <div class="simplemarquee-wrapper">
+          <ul>
+            <!-- li안쪽에는 원하는 내용들을 넣으면된다~~ li까지가 레이아웃~~ -->
+            <li>
+              <a href="//www.bodyluv.kr/" target="_blank" title="바디럽"><img src="./images/bottom-item1.jpg" alt="" /> </a>
+            </li>
+            <li>
+              <a href="//www.hotping.co.kr/" target="_blank" title="핫핑"><img src="./images/bottom-item2.jpg" alt="" /> </a>
+            </li>
+            <li>
+              <a href="//www.66girls.co.kr/" target="_blank" title="육육걸즈"><img src="./images/bottom-item3.jpg" alt="" /> </a>
+            </li>
+            <!-- <li><a href="//www.andar.co.kr/" target="_blank" title="안다르"><img src="//via.placeholder.com/350x150" alt=""></a></li> -->
+          </ul>
+        </div>
+        <div class="simplemarquee-wrapper">
+          <ul>
+            <!-- li안쪽에는 원하는 내용들을 넣으면된다~~ li까지가 레이아웃~~ -->
+            <li>
+              <a href="//www.bodyluv.kr/" target="_blank" title="바디럽"><img src="./images/bottom-item1.jpg" alt="" /> </a>
+            </li>
+            <li>
+              <a href="//www.hotping.co.kr/" target="_blank" title="핫핑"><img src="./images/bottom-item2.jpg" alt="" /> </a>
+            </li>
+            <li>
+              <a href="//www.66girls.co.kr/" target="_blank" title="육육걸즈"><img src="./images/bottom-item3.jpg" alt="" /> </a>
+            </li>
+            <!-- <li><a href="//www.andar.co.kr/" target="_blank" title="안다르"><img src="//via.placeholder.com/350x150" alt=""></a></li> -->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

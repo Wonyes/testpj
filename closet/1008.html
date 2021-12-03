@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CLOSET</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700;800&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="./css/fonts.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/ftc.css" />
+    <link rel="stylesheet" href="./css/libs/slick.css" />
+    <script src="./js/libs/jquery-3.6.0.js"></script>
+    <script src="./js/libs/slick.min.js"></script>
+    <script src="/js/script.js"></script>
+  </head>
+
+  <body>
+    <!-- 메뉴 -->
+    <header class="hd">
+      <!-- logo -->
+      <h1 class="logo">
+        <a href="#" target="_blank">
+          <img src="./images/logo.png" alt="logo" />
+        </a>
+      </h1>
+      <nav class="gnb">
+        <!-- 상단메뉴 -->
+        <div class="gnb-menu1">
+          <ul>
+            <li class="dep1"><a href="#">LOGIN</a></li>
+            <li class="dep1"><a href="#">ORDER DETAILS</a></li>
+            <li class="dep1"><a href="#">MY PAGE</a></li>
+            <li class="dep1"><a href="#">MY CLOSET</a></li>
+          </ul>
+          <div class="search-area">
+            <input type="Search" placeholder="Search" />
+          </div>
+        </div>
+        <!-- 사이드메뉴 -->
+        <div class="gnb2">
+          <ul class="gnb-menu2">
+            <!-- dep1으로 -->
+            <li class="dep1"><a href="http://127.0.0.1:5500/top.html#">TOP</a></li>
+            <li class="dep1"><a href="http://127.0.0.1:5500/pants.html">PANTS</a></li>
+            <li class="dep1"><a href="http://127.0.0.1:5500/outer.html">OUTER</a></li>
+            <li class="dep1"><a href="http://127.0.0.1:5500/jewelry.html">JEWELRY</a></li>
+            <li class="dep1"><a href="http://127.0.0.1:5500/dresses.html">DRESSES</a></li>
+            <li class="dep1"><a href="http://127.0.0.1:5500/home.html#">PRODUCT</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="main-bn slider">
+      <div class="item1"></div>
+      <div class="item2"></div>
+      <div class="item3"></div>
+    </div>
+    <!-- 신상품 -->
+    <section class="content new-item">
+      <div class="sec-header">
+        <div class="inner">
+          <h3 class="main-tit">New Item</h3>
+          <a href="#" target="_blank" title="더보기" class="btn-more">
+            <span>View more ></span>
+          </a>
+        </div>
+      </div>
+      <div class="sec-body clearfix">
+        <div class="tmp-left">왼쪽영역</div>
+        <div class="main-item">
+          <a href="#" target="_blank">
+            <img class="m-item" src="./images/M-item.jpg" alt="mitem" />
+          </a>
+          <div class="aj-item-marquee-wrap">
+            <div class="marquee clearfix">
+              <div class="simplemarquee-wrapper">
+                <ul>
+                  <!-- li안쪽에는 원하는 내용들을 넣으면된다~~ li까지가 레이아웃~~ -->
+                  <li>
+                    <a href="//www.bodyluv.kr/" target="_blank" title="바디럽">
+                      <img src="./images/top-item1.jpg" alt="" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="//www.hotping.co.kr/" target="_blank" title="핫핑">
+                      <img src="./images/top-item2.jpg" alt="" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="//www.66girls.co.kr/" target="_blank" title="육육걸즈">
+                      <img src="./images/top-item3.jpg" alt="" />
+                    </a>
+                  </li>
+                  <!-- <li><a href="//www.andar.co.kr/" target="_blank" title="안다르"><img src="//via.placeholder.com/350x150" alt=""></a></li> -->
+                </ul>
+              </div>
+              <div class="simplemarquee-wrapper">
+                <ul>
+                  <!-- li안쪽에는 원하는 내용들을 넣으면된다~~ li까지가 레이아웃~~ -->
+                  <li>
+                    <a href="//www.bodyluv.kr/" target="_blank" title="바디럽">
+                      <img src="./images/top-item1.jpg" alt="" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="//www.hotping.co.kr/" target="_blank" title="핫핑">
+                      <img src="./images/top-item2.jpg" alt="" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="//www.66girls.co.kr/" target="_blank" title="육육걸즈">
+                      <img src="./images/top-item3.jpg" alt="" />
+                    </a>
+                  </li>
+                  <!-- <li><a href="//www.andar.co.kr/" target="_blank" title="안다르"><img src="//via.placeholder.com/350x150" alt=""></a></li> -->
+                </ul>
+              </div>
+            </div>
+            <div class="marquee clearfix">
+              <div class="simplemarquee-wrapper">
+                <ul>
+                  <!-- li안쪽에는 원하는 내용들을 넣으면된다~~ li까지가 레이아웃~~ -->
+                  <li>
+                    <a href="//www.bodyluv.kr/" target="_blank" title="바디럽"><img src="./images/bottom-item1.jpg" alt="" /> </a>
+                  </li>
+                  <li>
+                    <a href="//www.hotping.co.kr/" target="_blank" title="핫핑"><img src="./images/bottom-item2.jpg" alt="" /> </a>
+                  </li>
+                  <li>
+                    <a href="//www.66girls.co.kr/" target="_blank" title="육육걸즈"><img src="./images/bottom-item3.jpg" alt="" /> </a>
+                  </li>
+                  <!-- <li><a href="//www.andar.co.kr/" target="_blank" title="안다르"><img src="//via.placeholder.com/350x150" alt=""></a></li> -->
+                </ul>
+              </div>
+              <div class="simplemarquee-wrapper">
+                <ul>
+                  <!-- li안쪽에는 원하는 내용들을 넣으면된다~~ li까지가 레이아웃~~ -->
+                  <li>
+                    <a href="//www.bodyluv.kr/" target="_blank" title="바디럽"><img src="./images/bottom-item1.jpg" alt="" /> </a>
+                  </li>
+                  <li>
+                    <a href="//www.hotping.co.kr/" target="_blank" title="핫핑"><img src="./images/bottom-item2.jpg" alt="" /> </a>
+                  </li>
+                  <li>
+                    <a href="//www.66girls.co.kr/" target="_blank" title="육육걸즈"><img src="./images/bottom-item3.jpg" alt="" /> </a>
+                  </li>
+                  <!-- <li><a href="//www.andar.co.kr/" target="_blank" title="안다르"><img src="//via.placeholder.com/350x150" alt=""></a></li> -->
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="content middle-banner">
+      <div class="sec-body">
+        <a href="#">
+          <img src="./images/middle-banner.jpg" alt="m-banner" />
+        </a>
+      </div>
+    </section>
+    <section class="content hot-item">
+      <div class="sec-header">
+        <div class="inner">
+          <h3 class="main-tit">Hot Item</h3>
+          <a href="#" target="_blank" title="더보기" class="btn-more">
+            <span>View more ></span>
+          </a>
+        </div>
+      </div>
+      <div class="sec-body clearfix">
+        <div class="inner">
+          <div class="aj-item-list">
+            <div class="items">
+              <div class="h-item">
+                <a href="#"><img id="ho1" src="./images/H-item1.jpg" alt="1" /></a>
+                <a href="#"><img id="ho1" class="over_img" src="./images/ho-item1.jpg" alt="1" /></a>
+              </div>
+              <div class="txt-area">
+                <a href="#">
+                  <span class="title">Flop Pocket Shirt & High-Waisted Belfed Trousers set [Black] </span>
+                </a>
+                <div class="price">
+                  <a href="#">
+                    <span>KRW 346,000</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="items">
+              <div class="h-item">
+                <a href="#"><img src="./images/H-item2.jpg" alt="2" /></a>
+                <a href="#"><img class="over_img" src="./images/ho-item2.jpg" alt="2" /></a>
+              </div>
+              <div class="txt-area">
+                <div class="txt">
+                  <a href="#">
+                    <span class="title">Logo Short-Sleeve Sweatshirt [Black] & Ribbed Lounge Pants [Black] </span>
+                  </a>
+                </div>
+                <div class="price">
+                  <a href="#">
+                    <span>KRW 263,000</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="items">
+              <div class="h-item">
+                <a href="#"><img src="./images/H-item3.jpg" alt="3" /></a>
+                <a href="#"><img class="over_img" src="./images/ho-item3.jpg" alt="3" /></a>
+              </div>
+              <div class="txt-area">
+                <div class="txt">
+                  <a href="#">
+                    <span class="title">Slik Camisole [Dark Brown/Black] & Linen Viscose Trousers {Ash Brown} </span>
+                  </a>
+                </div>
+                <div class="price">
+                  <a href="#">
+                    <span>KRW 489,000</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="items">
+              <div class="h-item">
+                <a href="#"><img src="./images/H-item4.jpg" alt="4" /></a>
+                <a href="#"><img class="over_img" src="./images/ho-item4.jpg" alt="4" /></a>
+              </div>
+              <div class="txt-area">
+                <div class="txt">
+                  <a href="#">
+                    <span class="title"> Classic Blozer & Pleated Skirt set </span>
+                  </a>
+                </div>
+                <div class="price">
+                  <a href="#">
+                    <span> KRW 432,000 </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="items">
+              <div class="h-item">
+                <a href="#"><img src="./images/H-item5.jpg" alt="5" /></a>
+                <a href="#"><img class="over_img" src="./images/ho-item5.jpg" alt="5" /></a>
+              </div>
+              <div class="txt-area">
+                <div class="txt">
+                  <a href="#">
+                    <span class="title">Holf-zip Sweatshirt & Organic Cotton Ploid jogger Pants [Beige} </span>
+                  </a>
+                </div>
+                <div class="price">
+                  <a href="#">
+                    <span>KRW 569,000</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="content fall-banner">
+      <div class="sec-header">
+        <div class="banner1">
+          <img src="./images/fall-banner1.jpg" alt="f-logo1" />
+        </div>
+        <div class="banner2">
+          <img src="./images/fall-banner2.jpg" alt="f-logo2" />
+        </div>
+      </div>
+      <div class="txt-area">
+        <a href="#"><span class="bag">View more ></span></a>
+        <a href="#"><span class="fall">View more ></span></a>
+      </div>
+    </section>
+    <section class="content bottom-banner clearfix">
+      <div class="sec-header">
+        <div class="main-img-area">
+          <img src="./images/bottom-banner1.jpg" alt="main" />
+        </div>
+        <div class="side-banner">
+          <img id="b-banner1" src="./images/bottom-banner1-1.jpg" alt="side1" />
+          <img id="b-banner2" src="./images/bottom-banner1-2.jpg" alt="side2" />
+        </div>
+      </div>
+      <div class="txt-area">
+        <a href="#"><span class="daily">View more</span></a>
+        <a href="http://127.0.0.1:5500/home.html#"><span class="home">View more</span></a>
+        <a href="http://127.0.0.1:5500/jewelry.html"><span class="jewelry">View more</span></a>
+      </div>
+    </section>
+    <footer class="ft">
+      <div class="box-wrap">
+        <div class="box">
+          <h6><img src="./images/logo.png" alt="ft-logo" /></h6>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
